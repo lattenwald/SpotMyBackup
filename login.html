@@ -7,7 +7,7 @@
 		<script type='text/javascript'>//<![CDATA[
 
 		 var conf;
-		 $.ajax("https://spot.lattenwald.app/config.json", {async: false}).done(function(data){conf = data});
+		 $.ajax("/config.json", {async: false}).done(function(data){conf = data});
 
 		 window.onload = function() {
 			 var target = window.self === window.top ? window.opener : window.parent;
